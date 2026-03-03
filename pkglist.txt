@@ -6,6 +6,7 @@ base
 base-devel
 bluez
 bluez-utils
+bpytop
 cmatrix
 dotnet-sdk
 eog

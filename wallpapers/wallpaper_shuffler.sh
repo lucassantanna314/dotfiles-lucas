@@ -1,19 +1,23 @@
 #!/bin/bash
 
-# Caminho da pasta de wallpapers
 WALLPAPER_DIR="/home/lucas/dotfiles/wallpapers"
+INTERVAL=1800
 
-# Tempo de espera (1h = 3600 segundos)
-INTERVAL=3600
+# Garante que o swww-daemon está rodando, se não, inicia
+swww query || swww-daemon &
 
-# Loop infinito
+# Espera 2 segundos para o daemon estabilizar no boot
+sleep 2
+
 while true; do
-  # Lista os arquivos de imagem (jpg, png, webp) de forma ordenada
-  find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" \) | sort | while read -r img; do
-    # Muda o wallpaper usando o swww
+  # Cria uma lista das imagens e troca uma por uma
+  for img in "$WALLPAPER_DIR"/*.{jpg,jpeg,png,webp}; do
+    # Verifica se o arquivo existe (evita erro se a pasta estiver vazia)
+    [ -e "$img" ] || continue
+
     swww img "$img" --transition-type center --transition-step 30 --transition-fps 60
 
-    # Espera o tempo definido
+    # Espera 1 hora antes de ir para a próxima imagem da lista
     sleep $INTERVAL
   done
 done
