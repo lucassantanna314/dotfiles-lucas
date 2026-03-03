@@ -37,3 +37,18 @@ function update_setup() {
     git push
     cd -
 }
+
+# Onde o histórico será salvo
+HISTFILE=~/.zsh_history
+
+# Quantos comandos salvar na sessão atual
+HISTSIZE=10000
+
+# Quantos comandos salvar no arquivo permanentemente
+SAVEHIST=10000
+
+# Opções para melhorar o histórico:
+setopt appendhistory       # Adiciona ao histórico em vez de sobrescrever
+setopt sharehistory        # Compartilha o histórico entre diferentes janelas do terminal
+setopt hist_ignore_dups    # Não salva comandos repetidos seguidos
+setopt hist_ignore_space   # Não salva comandos que começam com espaço
