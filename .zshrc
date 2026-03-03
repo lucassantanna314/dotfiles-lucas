@@ -18,3 +18,22 @@ source <(fzf --zsh)
 eval "$(starship init zsh)"
 
 export MSBuildAllowMissingPrunePackageData=true
+
+function update_setup() {
+    cd ~/dotfiles
+
+    # Sincroniza as pastas principais
+    cp -r ~/.config/{hypr,kitty,nvim,waybar,lazygit,nwg-look,gtk-3.0,gtk-4.0,nemo} .
+    cp ~/.config/starship.toml .
+    cp ~/.zshrc .
+    
+    # Atualiza as listas de apps
+    pacman -Qqe | grep -v "$(pacman -Qmq)" > pkglist.txt
+    pacman -Qmq > aurlist.txt
+    
+    # Sobe para o GitHub
+    git add .
+    git commit -m "Update setup: $(date +'%d/%m/%Y %H:%M')"
+    git push
+    cd -
+}
