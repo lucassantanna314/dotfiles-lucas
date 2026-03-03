@@ -20,6 +20,14 @@ cp starship.toml ~/.config/
 cp .zshrc ~/
 cp -r wallpapers ~/
 
+echo "Configurando o SDDM e o Tema..."
+# Cria a pasta do sistema
+sudo mkdir -p /etc/sddm.conf.d/
+# Copia o arquivo que está no seu backup para a pasta do sistema
+sudo cp sddm/theme.conf /etc/sddm.conf.d/theme.conf
+# Habilita o SDDM para iniciar no boot
+sudo systemctl enable sddm
+
 echo "Instalando workloads do .NET 10 para Blazor..."
 sudo dotnet workload install wasm-tools
 

@@ -42,6 +42,7 @@ pipewire-jack
 pipewire-pulse
 qt5ct
 qt6ct
+sddm
 slurp
 starship
 sudo
