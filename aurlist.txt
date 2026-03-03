@@ -1,0 +1,12 @@
+aspnet-runtime-8.0-bin
+aspnet-runtime-9.0-bin
+dotnet-runtime-8.0-bin
+dotnet-runtime-9.0-bin
+dotnet-sdk-8.0-bin
+dotnet-sdk-9.0-bin
+dotnet-targeting-pack-8.0-bin
+dotnet-targeting-pack-9.0-bin
+google-chrome
+visual-studio-code-bin
+yay
+yay-debug
