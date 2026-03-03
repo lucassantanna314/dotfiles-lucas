@@ -25,6 +25,7 @@ function update_setup() {
     # Sincroniza as pastas principais
     cp -r ~/.config/{hypr,kitty,nvim,waybar,lazygit,nwg-look,gtk-3.0,gtk-4.0,nemo} .
     cp ~/.config/starship.toml .
+    cp -r ~/wallpapers .
     cp ~/.zshrc .
     
     # Atualiza as listas de apps

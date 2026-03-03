@@ -6,6 +6,7 @@ base
 base-devel
 bluez
 bluez-utils
+cmatrix
 dotnet-sdk
 eog
 firefox

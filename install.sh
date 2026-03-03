@@ -18,6 +18,7 @@ mkdir -p ~/.config
 cp -r hypr kitty nvim waybar lazygit nwg-look gtk-3.0 gtk-4.0 nemo ~/.config/
 cp starship.toml ~/.config/
 cp .zshrc ~/
+cp -r wallpapers ~/
 
 echo "Instalando workloads do .NET 10 para Blazor..."
 sudo dotnet workload install wasm-tools
