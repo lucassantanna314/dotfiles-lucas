@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Caminho da pasta de wallpapers
-WALLPAPER_DIR="/home/lucas/wallpapers"
+WALLPAPER_DIR="/home/lucas/dotfiles/wallpapers"
 
 # Tempo de espera (1h = 3600 segundos)
 INTERVAL=3600
