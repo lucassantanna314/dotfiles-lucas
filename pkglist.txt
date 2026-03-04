@@ -12,6 +12,8 @@ cmatrix
 dotnet-sdk
 efibootmgr
 eog
+evince
+file-roller
 firefox
 freecad
 fzf
@@ -33,12 +35,16 @@ lazygit
 libpulse
 linux
 linux-firmware
+loupe
+mousepad
 nemo
+nemo-fileroller
 neovim
 nodejs
 noto-fonts
 npm
 nwg-look
+obs-studio
 pavucontrol
 pipewire
 pipewire-alsa

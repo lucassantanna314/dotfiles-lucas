@@ -1,3 +1,4 @@
+anydesk-bin
 aspnet-runtime-8.0-bin
 aspnet-runtime-9.0-bin
 dotnet-runtime-8.0-bin
@@ -11,3 +12,5 @@ sddm-sugar-candy-git
 visual-studio-code-bin
 yay
 yay-debug
+yp-tools
+yp-tools-debug
