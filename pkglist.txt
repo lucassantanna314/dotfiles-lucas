@@ -13,6 +13,7 @@ dotnet-sdk
 efibootmgr
 eog
 evince
+fd
 file-roller
 firefox
 freecad
