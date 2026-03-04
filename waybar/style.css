@@ -129,3 +129,16 @@ window#waybar {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+#idle_inhibitor {
+    padding: 0 10px;
+}
+
+#idle_inhibitor.activated {
+    color: #81a1c1; /* Cor para quando estiver impedindo o repouso */
+}
+
+#idle_inhibitor.deactivated {
+    color: #4c566a; /* Cor para o modo normal */
+}
+

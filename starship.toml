@@ -203,3 +203,6 @@ symbol = " "
 
 [zig]
 symbol = " "
+
+[battery]
+disabled = true

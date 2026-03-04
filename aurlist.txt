@@ -8,6 +8,7 @@ dotnet-sdk-9.0-bin
 dotnet-targeting-pack-8.0-bin
 dotnet-targeting-pack-9.0-bin
 google-chrome
+jetbrains-toolbox
 sddm-sugar-candy-git
 visual-studio-code-bin
 yay

@@ -29,12 +29,14 @@ github-cli
 grim
 grub
 gst-plugin-pipewire
+hypridle
 hyprland
 hyprlauncher
 hyprpaper
 inkscape
 intel-ucode
 iwd
+kcalc
 kitty
 kvantum
 lazygit
@@ -43,6 +45,7 @@ libvirt
 linux
 linux-firmware
 loupe
+mako
 mousepad
 nano
 nemo

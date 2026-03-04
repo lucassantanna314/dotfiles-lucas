@@ -28,12 +28,20 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "tray",
+    "idle_inhibitor",
     "battery",
+    "tray",
     "clock"
   ],
   "custom/icon": {
     "format": "  "
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
   },
   "hyprland/window": {
     "separate-outputs": true,

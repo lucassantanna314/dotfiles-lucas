@@ -36,6 +36,7 @@ function update_setup() {
     git commit -m "Update setup: $(date +'%d/%m/%Y %H:%M')"
     git push
     cd -
+    notify-send "Backup Concluído" "Seu setup foi sincronizado com o GitHub."
 }
 
 # Onde o histórico será salvo
