@@ -1,6 +1,7 @@
 7zip
 adw-gtk-theme
 alsa-utils
+amd-ucode
 aspnet-runtime
 base
 base-devel
@@ -9,6 +10,7 @@ bluez-utils
 bpytop
 cmatrix
 dotnet-sdk
+efibootmgr
 eog
 firefox
 freecad
@@ -24,6 +26,7 @@ hyprlauncher
 hyprpaper
 inkscape
 intel-ucode
+iwd
 kitty
 kvantum
 lazygit
@@ -41,10 +44,12 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+power-profiles-daemon
 qt5ct
 qt6ct
 sddm
 slurp
+sof-firmware
 starship
 sudo
 swww

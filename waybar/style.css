@@ -111,3 +111,21 @@ window#waybar {
 #clock:hover {
   color: @yellow;
 }
+
+#battery {
+    color: #a6da95; /* Um verde suave (estilo Tokyonight/Macchiato) */
+    padding: 0 10px;
+}
+
+#battery.warning {
+    color: #eed49f; /* Amarelo */
+}
+
+#battery.critical {
+    color: #ed8796; /* Vermelho */
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
