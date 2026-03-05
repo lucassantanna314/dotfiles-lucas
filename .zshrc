@@ -53,3 +53,7 @@ setopt appendhistory       # Adiciona ao histórico em vez de sobrescrever
 setopt sharehistory        # Compartilha o histórico entre diferentes janelas do terminal
 setopt hist_ignore_dups    # Não salva comandos repetidos seguidos
 setopt hist_ignore_space   # Não salva comandos que começam com espaço
+
+# Atalhos para a bateria do Acer
+alias bat-80="sudo modprobe -r acer_wmi_battery && sudo modprobe acer_wmi_battery mode=health"
+alias bat-100="sudo modprobe -r acer_wmi_battery && sudo modprobe acer_wmi_battery mode=normal"

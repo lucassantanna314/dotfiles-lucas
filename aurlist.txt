@@ -1,3 +1,4 @@
+acer-wmi-battery-dkms-git
 anydesk-bin
 aspnet-runtime-8.0-bin
 aspnet-runtime-9.0-bin

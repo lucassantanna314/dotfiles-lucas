@@ -1,4 +1,5 @@
 7zip
+acpi
 adw-gtk-theme
 alsa-utils
 amd-ucode
@@ -44,6 +45,7 @@ libpulse
 libvirt
 linux
 linux-firmware
+linux-headers
 loupe
 mako
 mousepad
