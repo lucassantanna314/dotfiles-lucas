@@ -28,6 +28,7 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
+    "custom/power_profile",
     "idle_inhibitor",
     "battery",
     "tray",
@@ -35,6 +36,13 @@
   ],
   "custom/icon": {
     "format": "  "
+  },
+  "custom/power_profile": {
+    "exec": "~/dotfiles/scripts/power_profile.sh",
+    "return-type": "json",
+    "interval": 30,
+    "on-click": "~/dotfiles/scripts/power_profile.sh next",
+    "format": "{}"
   },
   "idle_inhibitor": {
     "format": "{icon}",
