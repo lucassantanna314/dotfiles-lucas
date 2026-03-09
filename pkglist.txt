@@ -10,6 +10,7 @@ bc
 bluez
 bluez-utils
 bpytop
+brightnessctl
 cmatrix
 dialog
 dnsmasq
@@ -29,7 +30,10 @@ git
 github-cli
 grim
 grub
+gst-libav
 gst-plugin-pipewire
+gst-plugins-bad
+gst-plugins-ugly
 hypridle
 hyprland
 hyprlauncher
@@ -41,7 +45,9 @@ kcalc
 kitty
 kvantum
 lazygit
+libappindicator
 libpulse
+libva-utils
 libvirt
 linux
 linux-firmware
@@ -49,6 +55,7 @@ linux-headers
 loupe
 mako
 mousepad
+mpv
 nano
 nemo
 nemo-fileroller
@@ -66,6 +73,8 @@ pipewire-jack
 pipewire-pulse
 polkit-gnome
 power-profiles-daemon
+python-google-api-python-client
+python-google-auth-oauthlib
 qemu-desktop
 qt5ct
 qt6ct
