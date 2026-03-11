@@ -7,6 +7,7 @@ aspnet-runtime
 base
 base-devel
 bc
+blueman
 bluez
 bluez-utils
 bpytop
@@ -37,6 +38,7 @@ gst-plugins-ugly
 hypridle
 hyprland
 hyprlauncher
+hyprlock
 hyprpaper
 inkscape
 intel-ucode
@@ -60,6 +62,7 @@ nano
 nemo
 nemo-fileroller
 neovim
+nm-connection-editor
 nodejs
 noto-fonts
 npm
@@ -78,6 +81,7 @@ python-google-auth-oauthlib
 qemu-desktop
 qt5ct
 qt6ct
+rofi
 sddm
 slurp
 sof-firmware

@@ -144,3 +144,36 @@ window#waybar {
     border-radius: 10px;
 }
 
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#network,
+#bluetooth {
+    padding: 0 10px;
+    color: @sapphire; /* Mantendo o padrão que você pediu */
+}
+
+/* Cores específicas para estados de alerta (opcional) */
+#temperature.critical {
+    color: @red;
+}
+
+#pulseaudio.muted {
+    color: @overlay0;
+}
+
+#network.disconnected {
+    color: @maroon;
+}
+
+/* Hover para interação */
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover {
+    color: @yellow;
+}
+

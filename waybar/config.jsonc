@@ -29,7 +29,13 @@
   ],
   "modules-right": [
     "custom/power_profile",
+    "cpu",
+    "memory",
+    "temperature",
+    "bluetooth",
+    "network",
     "idle_inhibitor",
+    "pulseaudio",
     "battery",
     "tray",
     "clock"
@@ -43,6 +49,52 @@
     "interval": 30,
     "on-click": "~/dotfiles/scripts/power_profile.sh next",
     "format": "{}"
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 2
+  },
+  "memory": {
+    "format": " {used:0.1f}G",
+    "interval": 5
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " ",
+    "format-icons": {
+      "default": [
+        " ",
+        " ",
+        " "
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "blueman-manager"
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪 ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "on-click": "networkmanager_dmenu"
   },
   "idle_inhibitor": {
     "format": "{icon}",
